@@ -51,8 +51,11 @@
     display: grid;
     min-width: 100%;
     min-height: 100vh;
-    grid-template-rows: 4fr 15fr;
-    grid-template-columns: 4fr 15fr;
+    /* grid-template-rows: 4fr 15fr; */
+    grid-template-rows: min(150px)  auto;
+    /* grid-template-columns: 4fr 15fr; */
+    grid-template-columns:  min(150px)  auto;
+    overflow: auto;
 
 }
 
@@ -71,17 +74,14 @@
     background-color: grey;
 }
 
-/*main_box content display*/
-
 .main_box {
     display: grid;
-    grid-template-columns: 9fr 4fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-columns: min(200px, auto) 200px;
 }
 
 
 .project_panel{
-    background-color: rgba(51, 170, 51, .4);
+    background-color: rgba(45, 158, 45, 0.4);
     grid-row: 1 / 3;
 
     display:grid;
@@ -91,7 +91,7 @@
 }
 
 .other_panel {
-    background-color: rgba(99, 92, 161, 0.493);
+    background-color: rgba(184, 72, 77, 0.493);
     grid-row: 1 / 3;
 
     display:grid;
